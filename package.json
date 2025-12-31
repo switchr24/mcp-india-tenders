@@ -1,0 +1,28 @@
+{
+  "name": "mcp-india-tenders",
+  "version": "1.0.0",
+  "description": "MCP server for Indian government tenders (CPPP, eProc Rajasthan, Defence)",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "node build/mcp-test.js",
+    "inspector": "mcp-inspector"
+  },
+  "keywords": ["mcp", "india", "tenders", "procurement", "cppp"],
+  "author": "Ensol Multiclean",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-sdk/sdk": "^1.0.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0"
+  }
+}
